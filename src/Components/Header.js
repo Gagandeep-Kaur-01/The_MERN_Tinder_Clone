@@ -12,6 +12,12 @@ function Header() {
               <PersonIcon fontSize="Large" className="header_icon" />
             </IconButton>
 
+            <img 
+                className="header_logo"
+                src="https://1ooologos.net/wp-content/uploads/2018/07/tinder-logo.png"
+                alt=""
+            />    
+
         </div>
     )
 }
