@@ -4,8 +4,7 @@ import Header from './Components/Header';
 
 function App() {
   return (
-    <div className="app">
-      <h1> MERN TINDER clone </h1>    
+    <div className="app">   
 
       {/* Header */}
       <Header />
