@@ -14,8 +14,8 @@ function Header() {
 
             <img 
                 className="header_logo"
-                src="https://1ooologos.net/wp-content/uploads/2018/07/tinder-logo.png"
-                alt=""
+                src="https://1000logos.net/wp-content/uploads/2018/07/tinder-logo.png"
+                alt="logo"
             />    
 
         </div>
