@@ -3,7 +3,7 @@ import React from 'react';
 function TinderCards() {
 
   return (
-    <div>  
+    <div className="tinderCards">  
       
 
     </div>
