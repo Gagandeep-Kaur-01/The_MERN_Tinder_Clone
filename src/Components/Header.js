@@ -7,7 +7,6 @@ function Header() {
     return (
         <div className="header">
 
-            <h2>Header component</h2>
             <IconButton>
               <PersonIcon fontSize="Large" className="header_icon" />
             </IconButton>
