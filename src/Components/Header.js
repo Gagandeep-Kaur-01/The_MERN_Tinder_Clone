@@ -20,7 +20,7 @@ function Header() {
              >
             </img>
 
-            <ForumIcon />
+            <ForumIcon fontSize="large" className="header_icon" />
                 
 
         </div>
