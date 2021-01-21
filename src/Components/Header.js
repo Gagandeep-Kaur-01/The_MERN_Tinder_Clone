@@ -11,11 +11,14 @@ function Header() {
               <PersonIcon fontSize="Large" className="header_icon" />
             </IconButton>
 
-            <img 
+            <img              
                 className="header_logo"
-                src="https://1000logos.net/wp-content/uploads/2018/07/tinder-logo.png"
-                alt="logo"
-            />    
+                //src="https://1000logos.net/wp-content/uploads/2018/07/tinder-logo.png"
+                src="https://toppng.com/public/uploads/preview/tinder-logo-transparent-tinder-logo-11563243301zivc1sx84c.png"
+                alt="tinder logo"
+             >
+            </img>
+                
 
         </div>
     )
