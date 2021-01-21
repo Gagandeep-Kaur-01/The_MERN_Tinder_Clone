@@ -7,7 +7,7 @@ function Header() {
         <div className="header">
 
             <h2>Header component</h2>
-            <PersonIcon />
+            <PersonIcon fontSize="Large" className="header_icon" />
 
         </div>
     )
