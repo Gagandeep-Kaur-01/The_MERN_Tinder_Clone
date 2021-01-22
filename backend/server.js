@@ -1,6 +1,8 @@
 import express from 'express'
 import mongoose from 'mongoose'
 
+import Cards from "./dbCards.js"
+
 // App config
 const app = express(); // created an instance
 const port = process.env.PORT || 8001;
@@ -16,11 +18,20 @@ mongoose.connect(connection_url, {
 })
 
 // API Endpoints
+  // get: is to take the information
 app.get('/', (req, res) => res.status(200).send("Hello Pragrammers!!!"));
 
-  //post: to upload the data
+  //post: to upload the data, push the information into the database
 app.post('/tinder/card', (req, res) => {  
     const dbCard = req.body;
+
+    Cards.create(dbCard, (err, data) => {
+        if(err) {
+            res.status(500).send(err)
+        } else {
+            res.status(201).send(data)
+        }
+    })
 })
 
 // Listener
