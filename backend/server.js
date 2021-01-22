@@ -20,7 +20,7 @@ app.get('/', (req, res) => res.status(200).send("Hello Pragrammers!!!"));
 
   //post: to upload the data
 app.post('/tinder/card', (req, res) => {  
-    
+    const dbCard = req.body;
 })
 
 // Listener
