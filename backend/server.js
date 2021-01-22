@@ -6,9 +6,10 @@ import Cards from "./dbCards.js"
 // App config
 const app = express(); // created an instance
 const port = process.env.PORT || 8001;
-const connection_url = `mongodb+srv://admin:*********@cluster0.hrsea.mongodb.net/tinderdb?retryWrites=true&w=majority`
+const connection_url = `mongodb+srv://admin:*******@cluster0.hrsea.mongodb.net/tinderdb?retryWrites=true&w=majority`
 
 // Middlewares
+app.use(express.json());
 
 // DB config
 mongoose.connect(connection_url, {
@@ -35,7 +36,7 @@ app.post('/tinder/cards', (req, res) => {
 });
 
 //retriving everything from the database
-app.get('/tinder/card', (req, res) => {
+app.get('/tinder/cards', (req, res) => {
     Cards.find((err, data) => {
         if(err) {
             res.status(500).send(err)
