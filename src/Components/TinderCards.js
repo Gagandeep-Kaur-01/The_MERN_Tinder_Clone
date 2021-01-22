@@ -18,10 +18,10 @@ function TinderCards() {
   return (
     <div className="tinderCards">  
       <div className="tinderCards_cardContainer">
-        {people.map(person => (
+        {people.map((person) => (
           <TinderCard
             className="swipe"
-            key={character.name}
+            key={person.name}
             preventSwipe={["up", "down"]}
             onSwipe={(dir) => SwipeableDrawer(dir, character.name)}
             onCardLeftScreen={() => outOfFrame(character.name)}
