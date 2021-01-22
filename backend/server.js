@@ -11,6 +11,7 @@ const connection_url = `mongodb+srv://admin:*******@cluster0.hrsea.mongodb.net/t
 
 // Middlewares
 app.use(express.json());
+app.use(Cors());
 
 // DB config
 mongoose.connect(connection_url, {
