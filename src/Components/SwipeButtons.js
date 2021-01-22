@@ -5,12 +5,11 @@ import StarRateIcon from '@material-ui/icons/StarRate';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FlashOnIcon from '@material-ui/icons/FlashOn';
 import IconButton from "@material-ui/core/IconButton";
-
 import './SwipeButtons.css'
 
 function SwipeButtons() {
   return (
-    <div classNamse="swipeButtons">   
+    <div className="swipeButtons">   
 
         <IconButton className="swipeButtons__repeat">
           <ReplayIcon fontSize="large" />
