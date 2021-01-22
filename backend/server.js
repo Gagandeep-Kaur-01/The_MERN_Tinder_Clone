@@ -22,7 +22,7 @@ mongoose.connect(connection_url, {
 app.get('/', (req, res) => res.status(200).send("Hello Pragrammers!!!"));
 
   //post: to upload the data, push the information into the database
-app.post('/tinder/card', (req, res) => {  
+app.post('/tinder/cards', (req, res) => {  
     const dbCard = req.body;
 
     Cards.create(dbCard, (err, data) => {
@@ -30,6 +30,17 @@ app.post('/tinder/card', (req, res) => {
             res.status(500).send(err)
         } else {
             res.status(201).send(data)
+        }
+    })
+});
+
+//retriving everything from the database
+app.get('/tinder/card', (req, res) => {
+    Cards.find((err, data) => {
+        if(err) {
+            res.status(500).send(err)
+        } else {
+            res.status(200).send(data)
         }
     })
 })
