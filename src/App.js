@@ -7,12 +7,9 @@ function App() {
   return (
     <div className="app">   
 
-      {/* Header */}
-      <Header />
-
-      {/* TinderCards */}
+      <Header />      
       <TinderCards />
-      {/* SwipeButtons */}
+      <SwipeButtons />
 
     </div>
   );
