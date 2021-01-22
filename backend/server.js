@@ -18,5 +18,10 @@ mongoose.connect(connection_url, {
 // API Endpoints
 app.get('/', (req, res) => res.status(200).send("Hello Pragrammers!!!"));
 
+  //post: to upload the data
+app.post('/tinder/card', (req, res) => {  
+    
+})
+
 // Listener
-app.listen(port, () => console.log(`Listening on localhost: ${port}`))
+app.listen(port, () => console.log(`Listening on localhost: ${port}`));
