@@ -19,7 +19,7 @@ function SwipeButtons() {
           <CloseIcon fontSize="large" />
         </IconButton>
 
-        <IconButton className="swipeButtons__start">
+        <IconButton className="swipeButtons__star">
           <StarRateIcon fontSize="large" />
         </IconButton>
 
