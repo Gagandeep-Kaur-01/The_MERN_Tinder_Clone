@@ -24,7 +24,9 @@ function TinderCards() {
     */
    
     useEffect (() => {
-     
+     async function fetchData() {
+       const req = await
+     }
     }, [])
     
 
