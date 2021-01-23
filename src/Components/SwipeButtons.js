@@ -11,23 +11,23 @@ function SwipeButtons() {
   return (
     <div className="swipeButtons">   
 
-        <IconButton className="swipeButtons__repeat">
+        <IconButton className="swipeButtons__repeat MuiIconsButton-root">
           <ReplayIcon fontSize="large" />
         </IconButton>
 
-        <IconButton className="swipeButtons__left">
+        <IconButton className="swipeButtons__left MuiIconsButton-root">
           <CloseIcon fontSize="large" />
         </IconButton>
 
-        <IconButton className="swipeButtons__star">
+        <IconButton className="swipeButtons__star MuiIconsButton-root">
           <StarRateIcon fontSize="large" />
         </IconButton>
 
-        <IconButton className="swipeButtons__right">
+        <IconButton className="swipeButtons__right MuiIconsButton-root">
           <FavoriteIcon fontSize="large" />
         </IconButton>
 
-        <IconButton className="swipeButtons__lightning">
+        <IconButton className="swipeButtons__lightning MuiIconsButton-root">
           <FlashOnIcon fontSize="large" />
         </IconButton>
 
