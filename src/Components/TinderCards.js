@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { SwipeableDrawer } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import TinderCard from "react-tinder-card";
+import axios from '../axios';
 import "./TinderCards.css";
+
 
 function TinderCards() {
   const [people, setPeople] = useState([]);
