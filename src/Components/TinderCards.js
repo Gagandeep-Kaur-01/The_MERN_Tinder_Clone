@@ -1,10 +1,10 @@
 import { SwipeableDrawer } from '@material-ui/core';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import TinderCard from "react-tinder-card";
 import "./TinderCards.css";
 
 function TinderCards() {
-  const [people, setPeople] = useState([
+  const [people, setPeople] = useState([]);
     /* hard coded
     [
       {
@@ -21,8 +21,11 @@ function TinderCards() {
       }
     ]  
     */
+   
+    useEffect (() => {
+     
+    }, [])
     
-    ]);
 
     const swiped = (direction, nameToDelete) => {
       console.log("removing: " + nameToDelete);
